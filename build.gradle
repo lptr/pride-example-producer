@@ -1,0 +1,17 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		maven {
+			url "http://gradle.artifactoryonline.com/gradle/libs"
+		}
+	}
+    dependencies {
+        classpath "com.prezi.gradle.pride:gradle-pride-plugin:0.5.1"
+    }
+}
+
+group = "com.example"
+version = "1.0-SNAPSHOT"
+
+apply plugin: "pride"
+apply plugin: "java"
